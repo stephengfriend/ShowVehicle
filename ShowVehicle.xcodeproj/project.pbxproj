@@ -15,6 +15,10 @@
 		63E62B6C1C6A5C850011BDE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E62B6A1C6A5C850011BDE8 /* LaunchScreen.storyboard */; };
 		63E62B771C6A5C850011BDE8 /* ShowVehicleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E62B761C6A5C850011BDE8 /* ShowVehicleTests.m */; };
 		63E62B821C6A5C850011BDE8 /* ShowVehicleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E62B811C6A5C850011BDE8 /* ShowVehicleUITests.m */; };
+		63E62B951C6A5F570011BDE8 /* MotorVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E62B901C6A5F570011BDE8 /* MotorVehicle.m */; };
+		63E62B961C6A5F570011BDE8 /* MotorCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E62B911C6A5F570011BDE8 /* MotorCycle.m */; };
+		63E62B971C6A5F570011BDE8 /* Truck.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E62B921C6A5F570011BDE8 /* Truck.m */; };
+		63E62B9A1C6A75D40011BDE8 /* Dtafalonso-Android-Lollipop-Downloads.ico in Resources */ = {isa = PBXBuildFile; fileRef = 63E62B991C6A75D40011BDE8 /* Dtafalonso-Android-Lollipop-Downloads.ico */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		63E62B7D1C6A5C850011BDE8 /* ShowVehicleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowVehicleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E62B811C6A5C850011BDE8 /* ShowVehicleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowVehicleUITests.m; sourceTree = "<group>"; };
 		63E62B831C6A5C850011BDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E62B8F1C6A5F570011BDE8 /* MotorVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotorVehicle.h; sourceTree = "<group>"; };
+		63E62B901C6A5F570011BDE8 /* MotorVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotorVehicle.m; sourceTree = "<group>"; };
+		63E62B911C6A5F570011BDE8 /* MotorCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotorCycle.m; sourceTree = "<group>"; };
+		63E62B921C6A5F570011BDE8 /* Truck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Truck.m; sourceTree = "<group>"; };
+		63E62B931C6A5F570011BDE8 /* Truck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Truck.h; sourceTree = "<group>"; };
+		63E62B941C6A5F570011BDE8 /* MotorCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotorCycle.h; sourceTree = "<group>"; };
+		63E62B991C6A75D40011BDE8 /* Dtafalonso-Android-Lollipop-Downloads.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = "Dtafalonso-Android-Lollipop-Downloads.ico"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +112,13 @@
 		63E62B5B1C6A5C850011BDE8 /* ShowVehicle */ = {
 			isa = PBXGroup;
 			children = (
+				63E62B981C6A65A20011BDE8 /* Model */,
 				63E62B5F1C6A5C850011BDE8 /* AppDelegate.h */,
 				63E62B601C6A5C850011BDE8 /* AppDelegate.m */,
 				63E62B621C6A5C850011BDE8 /* ViewController.h */,
 				63E62B631C6A5C850011BDE8 /* ViewController.m */,
 				63E62B651C6A5C850011BDE8 /* Main.storyboard */,
+				63E62B991C6A75D40011BDE8 /* Dtafalonso-Android-Lollipop-Downloads.ico */,
 				63E62B681C6A5C850011BDE8 /* Assets.xcassets */,
 				63E62B6A1C6A5C850011BDE8 /* LaunchScreen.storyboard */,
 				63E62B6D1C6A5C850011BDE8 /* Info.plist */,
@@ -138,6 +151,19 @@
 				63E62B831C6A5C850011BDE8 /* Info.plist */,
 			);
 			path = ShowVehicleUITests;
+			sourceTree = "<group>";
+		};
+		63E62B981C6A65A20011BDE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63E62B8F1C6A5F570011BDE8 /* MotorVehicle.h */,
+				63E62B901C6A5F570011BDE8 /* MotorVehicle.m */,
+				63E62B911C6A5F570011BDE8 /* MotorCycle.m */,
+				63E62B921C6A5F570011BDE8 /* Truck.m */,
+				63E62B931C6A5F570011BDE8 /* Truck.h */,
+				63E62B941C6A5F570011BDE8 /* MotorCycle.h */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +275,7 @@
 				63E62B6C1C6A5C850011BDE8 /* LaunchScreen.storyboard in Resources */,
 				63E62B691C6A5C850011BDE8 /* Assets.xcassets in Resources */,
 				63E62B671C6A5C850011BDE8 /* Main.storyboard in Resources */,
+				63E62B9A1C6A75D40011BDE8 /* Dtafalonso-Android-Lollipop-Downloads.ico in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E62B961C6A5F570011BDE8 /* MotorCycle.m in Sources */,
 				63E62B641C6A5C850011BDE8 /* ViewController.m in Sources */,
 				63E62B611C6A5C850011BDE8 /* AppDelegate.m in Sources */,
+				63E62B971C6A5F570011BDE8 /* Truck.m in Sources */,
+				63E62B951C6A5F570011BDE8 /* MotorVehicle.m in Sources */,
 				63E62B5E1C6A5C850011BDE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

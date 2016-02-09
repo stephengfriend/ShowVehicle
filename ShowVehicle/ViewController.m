@@ -16,12 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.vehicle = [Truck randomInstance];
+    
+    [self updateFields:(self.vehicle)];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)newVehicle:(id)sender {
+        [self updateFields:([Truck randomInstance])];
+}
+
+- (void) updateFields:(Truck *)truck {
+    self.type.text = truck.type;
+    self.make.text = truck.make;
+    self.model.text = truck.model;
+    self.tires.text = [NSString stringWithFormat:@"%d", truck.numTires];
+    self.color.text = truck.color;
 }
 
 @end
